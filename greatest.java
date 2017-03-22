@@ -1,23 +1,27 @@
+package ranag;
 
 public class greatest {
-	static public void main(String args[])
-	{
-		greatest1();
+
+	public static void main(String[] args){
+		
+		greatest();
 	}
-static void greatest1()
-{
-	int x=9,y=8,z=10;
+static void greatest(){
+	
+	int x=9,y=8,z=7;
 	if((x>y)&&(x>z))
 	{
 		System.out.println(x);
+		
 	}
-	else if((y>x)&&(y>z))
+	else if((y>z)&&(y>x))
 	{
 		System.out.println(y);
 	}
-	else if(( z>x)&&(z>y))
+	else if((z>x)&&(z>y))
 	{
 		System.out.println(z);
 	}
-}
+	}
+	
 }
