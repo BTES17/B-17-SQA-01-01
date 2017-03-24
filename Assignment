@@ -2,3 +2,10 @@ Date 23rd March 2017
 Create an array, store the values in array with Scannner class and display the elements in the array on the console.
 Create objects of the class and call a method that return a value and display the value returned. 
 Create two classes and call the methods of other classs.
+
+
+Date 24/3/2017: Weekend Assignment
+Create an method Myarray() that take arry as input parameter, MyArray () increase the value of each element of the array to 3, return the updated value and print the update array in the main method.
+Find the largest in the array elements with the index of the largest element.
+Sort the elements of the array in ascending order. 
+Find the frequency of each digit in the mobile number. 
