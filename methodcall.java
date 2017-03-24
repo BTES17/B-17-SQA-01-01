@@ -1,6 +1,6 @@
+package shy;
 
-public class methodcall
-{
+public class methodcall {
 
 	public static void main(String[] args) 
 	{
@@ -10,19 +10,19 @@ public class methodcall
 		{
 			System.out.println("A is greater");
 		}
-		else
+		else 
 		{
-			System.out.println("B is greater");
+			System.out.println("c is greater");
 		}
 		methodcall object = new methodcall();
-		System.out.println(object.method1());
+		System.out.println(object.method2());
 	}
-	int method1()
+	int method2()
 	{
-		int a=4;
+		int a=10;
 		int b=3;
 		int c;
-		c = a + b;
+		c = a * b;
 		return c;
 	}
 	
