@@ -1,10 +1,7 @@
-package sheena;
+package deepshi;
 
-public class object {
-
-	public object()
-	{
-	}
+public class object 
+{
 	public static void main(String args[])
 {
 	int a=45;
@@ -30,4 +27,5 @@ int object2()
 	return c;
 }
 }
+
 
