@@ -1,24 +1,37 @@
-package array;
+import java.util.Scanner;
 
-public class array2 {
-	public static void main(String[] args){
-	 int a=10;
-	 int b=20;
-	 int c=a+b;
-	 System.out.println(c);
-	 array2 object=new array2();
-	 System.out.println(object.method1());
-		 
-	}
-		int method1()
+public class array2 
+{
+	public static void main(String args[])
+	{
+		int i;
+		Scanner scan1 = new Scanner(System.in);
+		int arr1[]= new int[10];
+		System.out.println("Enter values");
+		for( i=0;i<=9;i++)
 		{
-			int a=7,b=5;
-			int c=a+b;
-			System.out.println(c);
-			return c;
+			arr1[i]= scan1.nextInt();
 		}
-		
+		for( i=0;i<=9;i++)
+		{
+			System.out.println(arr1[i]);
+		}
+		int max = arr1[0];
+		for(i=0;i<=9;i++)
+			{
+				if(max < arr1[i])
+				{
+					max = arr1[i];
+					i++;
+				}
+				//else
+				//{
+					//i++;
+				//}
+			}
+			System.out.println("Highest no in array is" +max  );
+			
 		
 	}
-	
 
+}
