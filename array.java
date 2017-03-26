@@ -1,24 +1,23 @@
-package shy;
+package array;
+
 import java.util.Scanner;
+
 public class array {
 
-	public array() {
-		// TODO Auto-generated constructor stub
+	public static void main(String[] args) {
+		int [] array=new int[10];
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter a value");
+		for(int i=0;i<=9;i++)
+		{
+		array [i]=scan.nextInt();
+			
+		}
+		for(int i=0;i<=9;i++)
+		{
+			System.out.println(array[i]);
+		}
+
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	
-		int i;
-		int[] arr=new int[10];
-		Scanner scan=new Scanner(System.in);
-		System.out.println("enter values");
-		for(i=0;i<5;i++)
-		{
-			arr[i]=scan.nextInt();
-      System .out.println(i);
-    
-    
-}
-	}
 }
