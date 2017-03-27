@@ -30,6 +30,11 @@ public class ascending {
 			}
 				
 				System.out.println("Ascending Order");
+			for( i=0;i<4;i++)
+			{
+				System.out.println( ary[i]);
+			}
+			System.out.println(ary[4]);
 				
 			}
 	}
