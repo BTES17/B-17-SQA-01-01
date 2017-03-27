@@ -24,10 +24,6 @@ public class array2
 					max = arr1[i];
 					i++;
 				}
-				//else
-				//{
-					//i++;
-				//}
 			}
 			System.out.println("Highest no in array is" +max  );
 			
