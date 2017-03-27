@@ -12,11 +12,7 @@ public class ascending {
 			{
 				ary[i]=scan1.nextInt();
 			}
-			for( i=0;i<4;i++)
-			{
-				System.out.println( ary[i]);
-			}
-			System.out.println(ary[4]);
+			
 			for( i=0;i<5;i++)
 			{
 				for( j=i+1;j<5;j++)
@@ -34,11 +30,7 @@ public class ascending {
 			}
 				
 				System.out.println("Ascending Order");
-				for( i=0;i<4;i++)
-				{
-					System.out.println( ary[i]);
-				}
-				System.out.println(ary[4]);
+				
 			}
 	}
 
