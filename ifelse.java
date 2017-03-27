@@ -1,21 +1,26 @@
-package vishali;
+package vinay;
 
 public class ifelse {
-	public static void main(String args[])
+
+	public static void main(String[] args) {
+	int a=67,b=60,c=77;
+	if(a>b&&a>c)
 	{
-		int a,b,c;
-		//System.out.println("Enter three integers ");
-	      //Scanner in = new Scanner(System.in);
-	      a= 61;
-	      b = 9;
-	      c = 1;
-	        if (a>b && a>c)
-	    	    System.out.println("first number is greatest");  
-	    	else if (b>a && b>c)
-	    		System.out.println("second number is greatest");
-	    	else if (c>a && c>b)
-	    		System.out.println("third number is greatest");
-	
+		System.out.print(a);
+	}
+	else
+	{
+		if(b>c)
+		{
+			System.out.print(b);
+		}
+		else
+		{
+			System.out.print(c);
+		}
+		}
+			
 	}
 
-}
+	}
+
