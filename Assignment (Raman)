@@ -9,3 +9,12 @@ Create an method Myarray() that take arry as input parameter, MyArray () increas
 Find the largest in the array elements with the index of the largest element.
 Sort the elements of the array in ascending order. 
 Find the frequency of each digit in the mobile number. 
+
+Dat 28/3/2017
+1.Find the factorial of the number 
+2. Print the fibnaci series
+3. Print the series of square of natural numbers 
+4. Print series of Odd number
+5. Print series of the prime number 
+6. Experiment the two dimensional array, Add values to the array from the user through keyboard and print the values on console. 
+7. Find the if the number say 67 exist in the array give the row and column number if the elemnt is found in the array. 
