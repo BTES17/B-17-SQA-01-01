@@ -1,24 +1,21 @@
-import java.util.Scanner;
-public class array {
-public static void main(String args[])
+package vinay;
+
+public class array
 {
-	int i;
-	Scanner scan =new Scanner(System.in);
-	int arr1[]=new int[10];
-	System.out.println("enter the values of array");
-	for(i=0;i<=9;i++)
-	{arr1[i]=scan.nextInt();
-	}
-	for(i=0;i<=9;i++)
-	{System.out.println(arr1[i]);
-	}
-	int max=arr1[0];
-	for(i=0;i<=9;i++)
-	{if(max<arr1[i])
+	static array2 object=new array2();
+	public static void main(String[] args) 
 	{
-		max=arr1[i];
-		i++;
+int a=15,b=25;
+System.out.println(a+""+b);
+	object.display();
 	}
-	System.out.println( "highest value of array is"+max);
-	
-	}}}
+}
+class array2
+{
+	int a=45;
+		int display()
+		{
+			System.out.println(a);
+			return 0;
+		}
+	}
