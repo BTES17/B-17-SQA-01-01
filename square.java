@@ -1,18 +1,23 @@
+package abc;
 import java.util.Scanner;
+public class square {
 
-public class square 
-{
-	public static void main(String args[])
+	public static void main(String[] args) 
 	{
-		int sq ;
-		Scanner scan= new Scanner(System.in);
-		System.out.println("Enter the count");
-		int count = scan.nextInt();
-		System.out.println("The series of natural no.s is");
-		for(int i=1;i<=count;i++)
+		int b;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the natural no of series");
+		
+		int sq_no = scan.nextInt();
+		System.out.println("the series of s of no's");
+		for(int i=1;i<=sq_no;i++ )
 		{
-			sq= i*i;
-			System.out.println(sq);
+
+			 b=i*i;
+		  
+			System.out.println(b);
 		}
-	}		
+		}
+			
+
 }
