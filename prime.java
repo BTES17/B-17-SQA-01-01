@@ -1,27 +1,28 @@
-package bebo;
+package vishali;
+
 import java.util.Scanner;
 
-public class prime
+public class prime {
+public static void main(String args[])
 {
-	public static void main(String args[])
-	{
-		int x,i;
-		System.out.println("Enter the number for checking whether it is prime or not");
-		Scanner in = new Scanner(System.in);
-		x= in.nextInt();
-		System.out.println("Print the number from 1 to " +x);
-		for (i=2;i<x;i++)
+	Scanner scan= new Scanner(System.in);
+	System.out.println("Enter the number");
+	int n=scan.nextInt();
+	int i=2;
+		while ( i<=(n-1))
 		{
-			if(x%i==0 )
+			if (n%i==0)
 			{
-				System.out.println("not a prime number");
-			break;
+				System.out.println("No. is not prime");
+				break;
 			}
-			else 
+			else
 			{
-				System.out.println("a prime number");	
+				System.out.println("No. is prime");
 				break;
 			}
 			
-		}}
+		}
+		i++;
+}
 }
