@@ -1,30 +1,28 @@
-package Vishali;
 import java.util.Scanner;
-public class matrix {
-	public static void main(String args[])
-{
-		int[][] array=new int[5][5];
-	Scanner scan=new Scanner(System.in);
-	System.out.println("enter the values of matrix");
-	
-		
-		{
-			for(int c=0;c<5;c++)
-			{
-				for(int r=0;r<5;r++)
-				{
-				array[c][r]=scan.nextInt();
-				}
-			}
-
-				for(int c=0;c<5;c++)
-				{
-					for(int r=0;r<5;r++)
-					{
-				
-				System.out.println(array[c][r]);
-				}
-			}
-		}
-}
-}
+ 
+ public class twodarray
+ {
+ 
+ 	public static void main(String[] args) 
+ 	{
+ 		int arr2[][] = new int[3][3];
+ 		Scanner scan = new Scanner(System.in);
+ 		System.out.println("Enter the elements for 3x3 matrix");
+ 		for(int i=0;i<3;i++)
+ 			{
+ 				for(int j=0;j<3;j++)
+ 				{
+ 					arr2[i][j] = scan.nextInt();
+ 				}
+ 			}
+ 		for(int i=0;i<3;i++)
+ 		{
+ 			for(int j=0;j<3;j++)
+ 			{
+ 				System.out.println(arr2[i][j]);
+ 			}
+ 		}
+ 		System.out.println(arr2[1][2]);
+ 	}
+ 
+ }
