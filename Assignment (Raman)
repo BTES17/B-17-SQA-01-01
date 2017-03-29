@@ -18,3 +18,10 @@ Dat 28/3/2017
 5. Print series of the prime number 
 6. Experiment the two dimensional array, Add values to the array from the user through keyboard and print the values on console. 
 7. Find the if the number say 67 exist in the array give the row and column number if the elemnt is found in the array. 
+
+Date 29/3/2017
+1. WAP To display row-wise sum of matrix of size m x n
+2. Write a program to add two array A and B of size m x n.
+3. Write a  program to find reverse of an array.
+4. Write a  program to print sum of diagonals of a matrix.
+5. WAP to print sum of square of natural numbers upto N numbers. 
