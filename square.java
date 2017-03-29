@@ -1,23 +1,19 @@
-package abc;
+package shilpa1;
 import java.util.Scanner;
 public class square {
 
-	public static void main(String[] args) 
-	{
-		int b;
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter the natural no of series");
-		
-		int sq_no = scan.nextInt();
-		System.out.println("the series of s of no's");
-		for(int i=1;i<=sq_no;i++ )
-		{
-
-			 b=i*i;
-		  
-			System.out.println(b);
-		}
-		}
-			
-
+public static void main(String args[])
+{
+	int n;
+    //int num=10;
+	Scanner scan=new Scanner(System.in);
+	System.out.println("enter any natural no.");
+	n=scan.nextInt();
+	int sqaure;
+	 for(int i=1;i<=n;i++)
+	 {
+		 sqaure=i*i;
+		 System.out.println(sqaure);
+	 }
+}
 }
