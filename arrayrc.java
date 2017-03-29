@@ -1,27 +1,30 @@
-package vishali;
-
+package Vishali;
 import java.util.Scanner;
-
-public class arrayrc
+public class matrix {
+	public static void main(String args[])
 {
-	public static void main(String[] args)
-{
+		int[][] array=new int[5][5];
 	Scanner scan=new Scanner(System.in);
 	System.out.println("enter the values of matrix");
 	
-		int[][] array=new int[5][6];
+		
 		{
-			for(int c=1;c<=5;c++)
+			for(int c=0;c<5;c++)
 			{
-				for(int r=1;r<=6;r++)
+				for(int r=0;r<5;r++)
 				{
 				array[c][r]=scan.nextInt();
+				}
+			}
+
+				for(int c=0;c<5;c++)
+				{
+					for(int r=0;r<5;r++)
+					{
+				
 				System.out.println(array[c][r]);
 				}
 			}
 		}
-		
-		
 }
-
 }
