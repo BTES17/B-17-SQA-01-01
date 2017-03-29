@@ -1,19 +1,19 @@
-package bebo;
-import java.util.Scanner;
 
-public class qwerty 
-{
-public static void main(String args[])
-{
-	int i,fact=1,x;
-	System.out.println("Enter the number to check it's factoial");
-Scanner in= new Scanner(System.in);
-x= in.nextInt();
-for (i=1;i<=x;i++)
-{
-	fact=fact*i;
-}
-	System.out.println (fact);
+public class factorial {
 
-}
+	public static void main(String[] args) {
+		
+	//	Scanner factorial=new Scanner (System.in);
+		int i;
+		int fact=1;
+		int number=5;
+		
+		for(i=1;i<=5;i++)
+			fact=fact*i;
+		
+		System.out.println(fact);
+		
+
+	}
+
 }
