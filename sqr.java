@@ -12,7 +12,7 @@ import java.util.Scanner;
  System.out.println("squaer of the number ");
  int count=0;
  
-	 //int a=123456;
+	 
  for(int i=1;i<=a;i++)
  {
 	 
