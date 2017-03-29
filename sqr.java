@@ -19,6 +19,7 @@ import java.util.Scanner;
 	int b=i*i;
 	System.out.println(b);
 	count=count+b;
+	 //int a=scan.nextInt();
  }
  System.out.println("sum of the series is" + count);
 	 }
