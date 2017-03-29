@@ -1,23 +1,27 @@
-public class primeee {
-    
-    public static void main(String[] args) {
-Scanner sc = new Scanner(System.in);
-System.out.println("Enter value of n=");  
-int num= sc.nextInt();
-  int count;
+package bebo;
+import java.util.Scanner;
 
-  for (int i = 1; i <= num; i++) {
-   count = 0;
-   for (int j = 2; j <= i / 2; j++) {
-    if (i % j == 0) {
-     count++;
-     break;
-    }
-   }
-
-   if (count == 0) {
-    System.out.println(i);
-   }
-  }
- }
+public class prime
+{
+	public static void main(String args[])
+	{
+		int x,i;
+		System.out.println("Enter the number for checking whether it is prime or not");
+		Scanner in = new Scanner(System.in);
+		x= in.nextInt();
+		System.out.println("Print the number from 1 to " +x);
+		for (i=2;i<x;i++)
+		{
+			if(x%i==0 )
+			{
+				System.out.println("not a prime number");
+			break;
+			}
+			else 
+			{
+				System.out.println("a prime number");	
+				break;
+			}
+			
+		}}
 }
