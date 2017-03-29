@@ -8,12 +8,12 @@ import java.util.Scanner;
 	 {
  Scanner scan=new Scanner(System.in);
  System.out.println("enter the values");
- //int a=scan.nextInt();
-	 //int a=123456;
- for(int i=1;i<=6;i++)
+ int a=scan.nextInt();
+	
+ for(int i=1;i<=a;i++)
  {
-	 int a=scan.nextInt();
-	int b=a*a;
+
+	int b=i*i;
 	System.out.println(b);
  }
 	 }
