@@ -1,19 +1,16 @@
-import java.util.Scanner;
 
-public class factorial
-{
-	public static void main(String args[])
-	{
-		int n,fact = 1;
-		System.out.println("Print the no of which you want factorial");
-		Scanner scan= new Scanner(System.in);
-		n = scan.nextInt();
-		
-		for(int i=n;i>=1;i--)
+public class factorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for( int i=1;i<=20;i++)
 		{
-			fact= fact*i;
-			
+		if(i%2!=0)
+		{
+			System.out.println(i);
 		}
-		System.out.println(fact);
+		
+
 	}
-}
+
+}}
