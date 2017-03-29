@@ -7,7 +7,7 @@ public class arrayrc
 	public static void main(String[] args)
 {
 	Scanner scan=new Scanner(System.in);
-	System.out.println("enter the values of mqtrix");
+	System.out.println("enter the values of matrix");
 	
 		int[][] array=new int[5][6];
 		{
