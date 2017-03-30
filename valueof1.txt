@@ -1,0 +1,11 @@
+package bebo;
+
+public class valueof {
+	public static void main(String args[] )
+
+	{
+		int a=10;
+		String s1= String.valueOf(a);
+		System.out.println(s1);
+	}
+}
