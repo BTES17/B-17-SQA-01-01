@@ -1,19 +1,19 @@
-package shilpa1;
+package bebo;
 import java.util.Scanner;
-public class square {
 
-public static void main(String args[])
+public class square
 {
-	int n;
-    //int num=10;
-	Scanner scan=new Scanner(System.in);
-	System.out.println("enter any natural no.");
-	n=scan.nextInt();
-	int sqaure;
-	 for(int i=1;i<=n;i++)
-	 {
-		 sqaure=i*i;
-		 System.out.println(sqaure);
-	 }
-}
-}
+	public static void main (String args[])
+	{
+		int i,x,z;
+		Scanner in= new Scanner(System.in);
+		x=in.nextInt();
+		for(i=1;i<x;i++)
+		{
+			z=i*i;
+			System.out.println(z);
+		}
+		
+	
+	
+}}
