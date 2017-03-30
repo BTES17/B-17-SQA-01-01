@@ -1,18 +1,20 @@
+package bebo;
 import java.util.Scanner;
-public class Fibonacci {
-    public static void main(String args[])
-    {
-        int a=0,b=1,c,i;
-         Scanner sc = new Scanner(System.in);
-System.out.println("Enter a number to print fibonacci series");  
-int n= sc.nextInt();
-            System.out.print(a+" "+b);
-        for(i=2;i<n;i++)
-        {
-          c=a+b;        
-        System.out.print(" " +c);
-        a=b;
-        b=c;   
-    }
-  }
-}
+
+public class fibonacci 
+{
+	public static void main (String args[])
+	 {
+	int t1=0,t2=1,nextterm=0,x;
+	Scanner in=new Scanner(System.in);
+	x=in.nextInt();
+	System.out.println(x);
+	for(int i=3;i<x;i++){
+		nextterm=t1+t2;
+		t1=t2;
+		t2=nextterm;
+		
+		
+		System.out.println(nextterm);
+	}
+}}
