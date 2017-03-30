@@ -18,11 +18,7 @@ public static void main(String args[])
 				System.out.println("No. is not prime");
 				break;
 			}
-			//else
-			//{
-				//System.out.println("No. is prime");
-				//break;
-			//}
+			
 			i++;
 		}
 		if(result==true)
