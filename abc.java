@@ -1,20 +1,20 @@
-package inder;
+package soniyajoshi;
 
-import java.util.Scanner;
 
-public class abc {
-public static void main(String args[])
+public class abc 
 {
-	Scanner in=new Scanner(System.in);
-
-int x=in.nextInt();
-int i;
-int fact=1;
-for(i=1;i<=x;i++)
-{
-	fact=fact*i;
-	
-}
-System.out.println(fact);
-}
-}
+	public static void main(String[] args)
+	{
+		String s1="Sonia";
+		int size=s1.length();
+		int i;
+		
+		for(i=size-1;i>=0;i--)
+		
+		
+		
+		
+		System.out.println(s1.charAt(i));
+		
+		
+	}}
