@@ -31,3 +31,10 @@ Date 29/3/2017
 2. WAP to print "Hello Java" as " Avaj OlleH"
 3. WAP to print "Hello Java" as "Java Hello". 
 2. Wap to find that a word exist in the String or not. 
+
+4/4/17
+1. WAP to store details of the five student as Name, Rollno, marks, collegename. 
+        -Create a method to add the student detail.
+        -Create a method that disply thr record of the each student.
+        - Calulateand print the percentagee of the student.
+        - The user should be able to identify each student uniquely. 
