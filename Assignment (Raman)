@@ -37,4 +37,9 @@ Date 29/3/2017
         -Create a method to add the student detail.
         -Create a method that disply thr record of the each student.
         - Calulateand print the percentagee of the student.
-        - The user should be able to identify each student uniquely. 
+        - The user should be able to identify each student uniquely.
+        - Practicse this using static, local and instance variables.
+ 
+ 5/4/17
+ 1. Practicse Constructor and this keyword on the above program.
+ 2. Kindly upload the assignment in the folder as we discussed in class today. 
