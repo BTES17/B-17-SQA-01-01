@@ -35,10 +35,11 @@ public class student {
      System.out.println("Enter the student's marks");
       obtain_marks=scan.nextInt();
       System.out.println("enter the student's college name");
-      college_name=scan.nextLine();
+      college_name=scan.next();
 	}
 
 	void display()
+	
 	{	
 	
       System.out.println(stu_name);
@@ -50,10 +51,22 @@ public class student {
 
 	void percentage()
 	{
-		float percentage=obtain_marks*100;
-		float b=percentage/500;
-		System.out.println(b);
+		float percentage=obtain_marks/500*100;
+	
+		System.out.println(percentage+""+ "%");
+		System.out.println();
+		int a=20;
+		System.out.println("a");
+		int c= 30+a*20;
+		System.out.println("c");
+		
+		
 	}
+	{
+		System.out.println("hello everyone");
+		
+	}
+	
 	
 	}
 	
