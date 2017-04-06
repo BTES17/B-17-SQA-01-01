@@ -55,13 +55,15 @@ public class student {
 	
 		System.out.println(percentage+""+ "%");
 		System.out.println();
-		int a=20;
-		System.out.println("a");
-		int c= 30+a*20;
-		System.out.println("c");
-		
-		
 	}
+	{
+		int a=20;
+		System.out.println(a);
+		int c= 30+a*20;
+		System.out.println(c);
+	}	
+		
+	
 	{
 		System.out.println("hello everyone");
 		
