@@ -8,15 +8,20 @@ public class blockk {
 	}
 	void demo()
 	{
-		for(int i=0;i<5;i++)
-		{
-			System.out.println(i);
-		}
+		
 	}
-	{
+	 {
 		int a=9;
 		System.out.println(a);
-		int b=a+2;
+		
+	}
+	static {
+		int b=4;
 		System.out.println(b);
 	}
+	{
+		System.out.println("Hi");
+	}
+	
+	
 }
