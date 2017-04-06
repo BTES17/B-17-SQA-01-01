@@ -107,29 +107,7 @@ public class student1 {
 					}
 					
 					
-			   static
-			   {
-						int a=10;
-						System.out.println(a);
-						int b=10+a*20;
-						System.out.println(b);
-					}
-				
-					{
-						int a=20;
-						int b=30;
-						int c=a*b;
-						System.out.println(c);
-						
-						}
-				static	{
-						int a=10;
-						int b=100+a;
-						System.out.println(b);
-						int c=a*b;
-						System.out.println(c);
-						
-					}
+		
 			}
 			
 
