@@ -8,6 +8,7 @@ public static void main(String args[])
 	System.out.println("hii");
 
 s.method();}
+
 	void method()
 	{int i;
 		for(i=0;i<=5;i++)
@@ -15,15 +16,24 @@ s.method();}
 			System.out.println(i);
 			
 		}
+	}
 		
-	}
-
-{
-	int a=11;
+		static
+		{	
+		int a=9;
+			
+				System.out.println(a);
+				
+			}
+			
+			
+			{int b=2;
+				
+				
+					System.out.println(b);
+			}
+				
 	
-System.out.println(a);
-	int b=a+2;
-	System.out.println(b);
-	}
+
 
 }
