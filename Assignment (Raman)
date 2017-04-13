@@ -60,3 +60,11 @@ Date 29/3/2017
                 2. using different data types of formal parameter but same number of formal parameter.
                 3. using same datatypes and same number of formal parameters but order is different.
 2. Immplement the concept of final on method, variable and class. 
+
+14/4/17
+1. Cretae interface and override its methods in its child class.
+2. Create abstract class and ovveride its methods in its child class.
+3. Can a child class have multiple immediate parents?
+4. Can you create object of abstract class?
+5. Can you create non abstract method in interface?
+6. Revise Java introduction and its feature for the Oral Test to be taken by tommorrow. 
