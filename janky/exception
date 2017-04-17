@@ -1,0 +1,29 @@
+package janky;
+import java.util.Scanner;
+
+public class ex {
+public static void main (String args[])
+{
+	System.out.println("Enter the values");
+	Scanner scan= new Scanner(System.in);
+int a=scan.nextInt();
+int b=scan.nextInt();
+	
+
+try
+{
+	int c=a/b;
+	System.out.println(c);
+	}
+catch(ArithmeticException c)
+{
+System.out.println(c);
+System.out.println("hello");
+}
+catch(Exception e)
+{
+	System.out.println(e);
+	}
+finally{
+	System.out.println("we don't care");
+}
