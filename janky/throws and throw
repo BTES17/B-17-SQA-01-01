@@ -1,0 +1,32 @@
+package janky;
+import java.util.Scanner;
+public class throwing {
+static Scanner scan = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		throwing obj1=new throwing();
+		
+		try{
+			voting();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		
+	}
+	static public void voting() throws Exception
+	{
+		System.out.println("Enter the age");
+		int b=scan.nextInt();
+		if(b<18 ){
+			throw new Exception("Age is not valid");
+	
+		}
+		System.out.println("run or not");
+	}
+	
+
+}
