@@ -40,3 +40,23 @@ What is the difference between declaring a variable and defining a variable?
 Which  is smallest integer data type ?
 What is a Class Variable?
 Is String a datatype? 
+Can you type cast a boolean datatype?
+
+Operators 
+http://enggedu.com/placements/interview_questions/java/java_interview_questions_on_operators_page2.php
+1.    a=10;
+     b=++a;
+    System.out.println(b)
+2. a=10;
+     b=a++;
+    System.out.println(a);
+3. int a=20;
+    a= ++a + 1;
+    System.out.println(a);  
+4. int a=20;
+    a= a++ + --a;
+    System.out.println(a);
+5. What is the difference between the Boolean & operator and the && operator? 
+6. What is the % operator?
+7. The statement A %= 5, can best described as
+5. What is the difference between the >> and >>> operators?
