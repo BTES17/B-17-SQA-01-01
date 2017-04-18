@@ -22,3 +22,21 @@ Difference between object orented and structured languages
 Python vs Java
 Founder of Java 
 Which organization is taking care of Java? 
+
+
+Datatypes/Keywords/Variables
+
+
+What are primitives and Non primitives data type?
+Explain implicit and explicit primitive casting?
+What is the default value of local varibles?
+What is the default value of instnace varibles?
+Is null a keyword?
+Is main a keyword?
+Are true false keywords in java?
+Primitive data types are passed by reference or pass by value?
+Objects are passed by value or by reference?
+What is the difference between declaring a variable and defining a variable?
+Which  is smallest integer data type ?
+What is a Class Variable?
+Is String a datatype? 
