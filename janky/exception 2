@@ -1,0 +1,60 @@
+package janky;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class ex {
+public static void main (String args[])
+{
+	System.out.println("Enter the values");
+	Scanner scan= new Scanner(System.in);
+int a=scan.nextInt();
+int b=scan.nextInt();
+int d=0,l=0,j=59,o;
+	
+try{
+	o=j/l;
+try
+{
+	int c=a/b;
+	System.out.println(c);
+	}
+
+catch(ArithmeticException c)
+{
+System.out.println(c);
+System.out.println("hello");
+}
+catch(Exception e)
+{
+	
+	System.out.println(e);
+	}
+try{
+	int c=d/a;
+	
+}
+catch(NullPointerException g)
+{
+	
+	System.out.println(g);
+	}
+try {
+	System.out.println("enter the numeric values only");
+	int h=scan.nextInt();
+}
+catch(InputMismatchException m)
+{
+System.out.println(m);	
+}
+}
+catch(ArithmeticException k)
+{
+	System.out.println("run or not");
+System.out.println(k);	
+}
+
+finally{
+	System.out.println("we don't care");
+}
+}
+}
