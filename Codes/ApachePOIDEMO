@@ -1,0 +1,31 @@
+     Sheet sheet;
+	 Workbook sample;
+	MyFile() throws IOException{
+	FileInputStream myfile= new FileInputStream("C:\\Documents and Settings\\install\\Desktop\\Sample.xls");
+	  sample= new HSSFWorkbook(myfile);
+	  int num= sample.getActiveSheetIndex();
+    	sheet = sample.getSheetAt(num);
+      
+      
+      
+      
+      public void setCellData(String Result,  int RowNum, int ColNum) throws Exception	{
+
+			try{
+
+  			Row row = sheet.getRow(RowNum);
+
+			Cell cell= row.getCell(ColNum, Row.RETURN_BLANK_AS_NULL);
+
+			if (cell == null) {
+
+				cell = row.createCell(ColNum);
+
+				cell.setCellValue(Result);
+
+				} else {
+
+					cell.setCellValue(Result);
+
+				}
+}
