@@ -1,0 +1,53 @@
+package janky;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+//import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+
+
+
+public class file {
+static Workbook first;
+static Sheet page;
+static int num;
+public static void main (String args[]) throws IOException
+{
+	FileInputStream obj1=new FileInputStream("C:\\Documents and Settings\\install\\Desktop\\first1.xls");
+first = new HSSFWorkbook(obj1);
+num = first.getActiveSheetIndex();
+
+page= first.getSheetAt(num);
+file obj2=new file();
+obj2.setCellData("hello", 0,0);
+
+System.out.println("sucess");
+}
+
+public void setCellData(String Result,  int RowNum, int ColNum) 	{
+
+
+
+		Row row = page.getRow(RowNum);
+
+	
+	Cell cell= row.getCell(ColNum);
+	System.out.println(cell.getColumnIndex());
+	System.out.println(cell.getNumericCellValue());
+	
+			cell.setCellValue(89);
+			System.out.println(cell.getNumericCellValue());
+
+		
+	
+		System.out.println();
+	
+	
+	}
+}
