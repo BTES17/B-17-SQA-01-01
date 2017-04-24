@@ -1,15 +1,65 @@
-     Sheet sheet;
+     package POI;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Iterator;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+
+
+public class MyFile {
+	Sheet sheet;
 	 Workbook sample;
+	 FileOutputStream fileOut;
+	 FileInputStream myfile;
+	 String path = "C:\\Documents and Settings\\install\\Desktop\\Sample.xls";
 	MyFile() throws IOException{
-	FileInputStream myfile= new FileInputStream("C:\\Documents and Settings\\install\\Desktop\\Sample.xls");
+	 myfile= new FileInputStream(path);
 	  sample= new HSSFWorkbook(myfile);
 	  int num= sample.getActiveSheetIndex();
-    	sheet = sample.getSheetAt(num);
-      
-      
-      
-      
-      public void setCellData(String Result,  int RowNum, int ColNum) throws Exception	{
+    	sheet = sample.getSheetAt(num);	
+	}
+	
+	
+	 
+		
+		
+	//String path= "C:\\Documents and Settings\\install\\Desktop\\Sample.xls";
+	public static void main (String args[]) 
+	{
+		
+		
+		
+		
+		
+		//Hls_Reader hr=new Hls_Reader("C:\\Documents and Settings\\install\\Desktop\\Sample.xls");
+		//String sname=hr.getSheetName(0);
+		//hr.setCellData(sname, "testdata", 1, "hi");
+		MyFile mf=null;
+		try {
+			mf = new MyFile();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try{
+		mf.setCellData("Row", 0, 0);
+		mf.getCellData(1, 1);}
+				 catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			
+
+	}	//This method is to write in the Excel cell, Row num and Col num are the parameters
+	 
+	public void setCellData(String Result,  int RowNum, int ColNum) throws Exception	{
 
 			try{
 
@@ -22,10 +72,68 @@
 				cell = row.createCell(ColNum);
 
 				cell.setCellValue(Result);
+				System.out.println("Test");
+				System.out.println(cell.getStringCellValue());
+
 
 				} else {
 
 					cell.setCellValue(Result);
+				
+					System.out.println("Test");
+					System.out.println(cell.getStringCellValue());
 
 				}
+
+		
+			
+			 fileOut = new FileOutputStream(path);
+
+			 sample.write(fileOut);
+
+			    fileOut.close();
+			
+			}
+	       catch(Exception e){
+
+				throw (e);
+
+		}
+	}	public String getCellData( int RowNum, int ColNum) throws Exception	{
+
+		try{
+
+			Row row = sheet.getRow(RowNum);
+
+		Cell cell= row.getCell(ColNum, Row.RETURN_BLANK_AS_NULL);
+
+		if (cell == null) {
+			System.out.println("No such cell exist");
+
+			return null;
+
+			} else {
+				System.out.println(cell.getStringCellValue().trim());
+
+				return cell.getStringCellValue().trim();
+
+			}
+
+  
+		// Constant variables Test Data path and Test Data file name
+		 
+			
+
+			
+
+			
+
+		}
+       catch(Exception e){
+
+			throw (e);
+
+	}
 }
+}
+
