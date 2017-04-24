@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Collections {
+
+	public static void main(String[] args) {
+		ArrayList<Integer>  list= new ArrayList<Integer>();
+		Scanner scan= new Scanner(System.in);
+		int i=0;
+		for (i=0; i<=5;i++)
+		{
+		   int c= scan.nextInt();
+		   list.add(c);
+		}
+		for (int a:list)
+		{
+					}
+		
+		
+	}
+
+}
