@@ -68,3 +68,29 @@ Date 29/3/2017
 4. Can you create object of abstract class?
 5. Can you create non abstract method in interface?
 6. Revise Java introduction and its feature for the Oral Test to be taken by tommorrow. 
+
+24/4/17
+Why do we need collections in Java?
+What are the important interfaces in the collection hierarchy?
+What are the important methods that are declared in the collection interface?
+Explain about ArrayList with an example?
+Can an ArrayList have duplicate elements?
+How do you iterate around an ArrayList using iterator?
+How do you sort an ArrayList?
+How do you sort elements in an ArrayList using comparable interface?
+How do you sort elements in an ArrayList using comparator interface?
+What is vector class? How is it different from an ArrayList?
+What is linkedList? What interfaces does it implement? How is it different from an ArrayList?
+Can you briefly explain about the Set interface?
+What is a HashSet?
+Which Package has Collection Classes?
+Which Package has Comparator Interface and Comparable Interface? 
+What is the parent class of Collection interface?
+
+
+24/4/17
+What is File Class?
+What type of streaming is available in Java? 
+WAP to simulate byte streaming in file? 
+WAP to simulate character streaming in Java? 
+WAP to simulate Object serialiaztion and Deserialization in Java?
