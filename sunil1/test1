@@ -1,0 +1,18 @@
+1. Why Java is called platform independent? 
+
+Ans= java is called platform independent because of jre is install on the machine which helps to execute java byte
+code on any machine.
+
+2. What is the output of 5&7?
+
+
+3. What is value a and b for  (b= a++ + a++) if a=5?
+ Ans = a=7
+       b=11
+
+4. Is statement    char r=100; correct?
+Ans = correct.
+
+5. What are datatypes? 
+ Ans=Data type define the which type of data we will use in the perticular programme.there is two tyes of data types that 
+  is primitive and non primitive 
