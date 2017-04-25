@@ -1,0 +1,15 @@
+Test 1
+1. Why Java is called platform independent? 
+Ans:-  A Java is work on any type  of operating system.it does not a any perticular opeating system need that why it is called a Independent plateform.
+
+2. What is the output of 5&7?
+5=101, 7=111. 5&7=101.
+
+3. What is value a and b for  (b= a++ + a++) if a=5?
+Ans:- a=7,b=11;
+4. Is statement    char r=100; correct?
+Ans:-  char is a keyword of character and it is store a character type data just like  'a','b','c' and also so on...but in this 
+statement it is hold a numeric value. but r=100 means a character is r and its value a 100..so it is correct.
+
+5. What are datatypes? 
+Ans:- Datatypes are  means to the identfy the types of data and associated operation with it..int  
