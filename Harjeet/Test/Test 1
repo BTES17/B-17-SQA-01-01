@@ -1,1 +1,10 @@
 
+1. Why Java is called platform independent? 
+Ans: 
+2. What is the output of 5&7?
+Ans: 
+3. What is value a and b for  (b= a++ + a++) if a=5?
+Ans
+4. Is statement    char r=100; correct?
+Ans:no, because in char we can only store charectr .char does not store integer values.
+5. What are datatypes? 
