@@ -1,0 +1,14 @@
+1. Why Java is called platform independent? 
+Ans. Java is called platform independent because it can work on any operating system like windows, macintosh,linux etc. 
+
+2. What is the output of 5&7?
+Ans.101(5)
+
+3. What is value a and b for  (b= a++ + a++) if a=5?
+Ans.b=11, a=7
+
+4. Is statement    char r=100; correct?
+Ans. Yes
+
+5. What are datatypes? 
+Ans.Datatypes are the means to define the type of data in a program and the operations performed.
