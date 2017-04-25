@@ -1,0 +1,24 @@
+1. Why Java is called platform independent? 
+Ans. Java is called platform independent because the code formed in Java is in the form of byte ie bytecode and this code 
+can be run on different platforms like android,linux etc. That is why Java is called platform independent and can be run on 
+different platforms.
+
+2. What is the output of 5&7?
+Ans.
+
+3. What is value a and b for  (b= a++ + a++) if a=5?
+Ans.b=11
+    a=7
+
+4. Is statement    char r=100; correct?
+Ans.True.
+
+
+5. What are datatypes? 
+Ans. Datatypes: are the pre-defined types of data inputs which are known to the compiler. They are categorized into 2 types:
+    1) PRIMITIVE
+    2) NON-PRIMITIVE
+    
+    Examples:
+    Primitive datatypes- int,char,float etc.
+    Non-Primitive datatypes- arrays,string etc.
