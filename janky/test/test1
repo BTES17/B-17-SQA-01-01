@@ -1,0 +1,11 @@
+1. Why Java is called platform independent? 
+Ans: Java is called platform independent because java has JVM(java virtual machine) and JRE(Java runtime enviroment).
+we can write code once then JRE convert into byte code
+2. What is the output of 5&7?
+Ans: 35
+3. What is value a and b for  (b= a++ + a++) if a=5?
+Ans: b=12, a=7
+4. Is statement    char r=100; correct?
+Ans: false because we insert integer vales in char.
+5. What are datatypes? 
+Ans: int , float ,char, double etc. 
