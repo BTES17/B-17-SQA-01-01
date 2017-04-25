@@ -1,0 +1,13 @@
+Test 1
+1. Why Java is called platform independent? 
+2. What is the output of 5&7?
+3. What is value a and b for  (b= a++ + a++) if a=5?
+4. Is statement    char r=100; correct?
+5. What are datatypes? 
+
+1 Ans:Java is platfoem Independent because in java first code is convert into byte code with the help of JVE(java virtual machine) under JRE(java run time Envoirnment).
+2 Ans:5
+3 Ans:b=11
+      a=7
+4 Ans:      
+      
