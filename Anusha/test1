@@ -1,1 +1,13 @@
+1. Why Java is called platform independent? 
+Ans. Java is called platform independent because of JVM, which is Java Virtual Machine i.e it virtually exists.
+It converts source code into byte code and then the interpreter will convert byte code into machine code. 
+Basically, interpreter is different for every machine and it converts byte code into machine code according to the respective machine.
 
+2. What is the output of 5&7?
+5
+3. What is value a and b for  (b= a++ + a++) if a=5?
+Ans. b = 11
+a = 7
+4. Is statement    char r=100; correct?
+Ans. 
+5. What are datatypes? 
