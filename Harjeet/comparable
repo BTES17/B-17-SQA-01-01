@@ -1,0 +1,51 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class camparable implements Comparable<camparable> 
+{	
+	String emp_name;
+int emp_id;
+double salary;
+static String comp_name="BTES";
+
+	public static void main(String[] args) {
+		
+		
+		
+        camparable obj1=new camparable("Sheena",1,1000000000);
+        camparable obj2=new camparable("Janky",2,10);
+        camparable obj3=new camparable("Harjeet",3,40000);
+       
+        ArrayList<camparable> list= new ArrayList<camparable>();       
+        	list.add(obj1);
+        	list.add(obj2);
+        	list.add(obj3);
+        	Collections.sort(list);
+        	for(camparable f:list){
+        		System.out.println(f.emp_name);
+        	}
+        	}
+	int compareto(camparable e)
+	{
+		if(this.emp_name > e.emp_name)
+			return 1; 
+		else if(this.emp_name==e.emp_name)
+			return 0;
+		
+		else
+			return -1;	
+			
+	}
+	camparable(String emp_name, int emp_id,double salary)
+	{
+		this.emp_name=emp_name;
+		this.emp_id=emp_id;
+		this.salary=salary;
+	}
+	@Override
+	public int compareTo(camparable o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	}
