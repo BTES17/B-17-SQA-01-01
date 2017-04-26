@@ -1,0 +1,21 @@
+package janky;
+import java.util.Scanner;
+import java.util.ArrayList;
+public class collections {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> list  = new ArrayList<Integer> ();
+		Scanner scan= new Scanner(System.in);
+		System.out.println("enter the values");
+		for(int i=0;i<=5;i++)
+		{
+			int c=scan.nextInt();
+			list.add(c);
+		}
+		for (int i:list){
+			
+			System.out.println(i);
+		}
+	}
+
+}
