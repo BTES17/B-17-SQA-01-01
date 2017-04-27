@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import java.util.Collections;
+public class Comparitive implements Comparable<Comparitive>{
+String name;
+int employee_id;
+double salary;
+static String  company_name="BTES";	
+
+	public static void main(String[] args) {
+		
+		Comparitive  obj1= new Comparitive("janky",3,1000);
+		Comparitive  obj2= new Comparitive("hlw",2,100);
+		Comparitive  obj3= new Comparitive("bello",1,10);
+	ArrayList<Comparitive> list=new ArrayList<Comparitive>();
+	 
+		 list.add(obj1);
+		 list.add(obj2);
+		 list.add(obj3);
+		 Collections.sort(list);
+		 	for(Comparitive c :list){
+		 		
+		System.out.println(c.salary);
+	} }
+public	 int compareTo(Comparitive e)
+	 {
+		 if(this.salary>e.salary)
+			 return 1;
+		 else if (this.salary==e.salary)
+			 return 0;
+		 else 
+			 return -1;
+	 }
+	 
+
+	 
+	
+
+	 Comparitive(String name,int employee_id,double salary)
+	{
+		this.name=name;
+		this.employee_id=employee_id;
+		this.salary=salary;
+	}
+
+}
