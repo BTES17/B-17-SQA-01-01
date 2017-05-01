@@ -1,0 +1,33 @@
+public class the extends Thread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+the obj=new the();
+the obj1 =new the();
+the obj2=new the ();
+obj.start();
+
+obj1.start();
+obj2.start();
+	}
+void mine()
+{
+	for (int i=1;i<=10;i++)
+	{
+	System.out.println(i);	
+	}
+	}
+public void run(){
+//mine();
+for (int i=1;i<=10;i++)
+{
+System.out.println(i);
+try {
+	Thread.sleep(200);
+} catch (InterruptedException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+}
+}
+}
