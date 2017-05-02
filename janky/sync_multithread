@@ -1,0 +1,36 @@
+
+public class sync_multithreading extends Thread{
+static	sync_multithreading obj;
+	public static void main(String[] args) {
+obj=new sync_multithreading();
+sync_multithreading obj1 =new sync_multithreading();
+sync_multithreading obj2=new sync_multithreading ();
+sync_multithreading obj3=new sync_multithreading ();
+//obj1.setPriority(2);
+//obj2.setPriority(10);
+//obj3.setPriority(8);
+obj1.setDaemon(true);
+obj1.start();
+obj2.start();
+obj3.start();
+
+	
+	}
+ synchronized void mine()
+{
+	for (int i=1;i<=10;i++)
+	{
+	System.out.println(Thread.currentThread().getName());
+	System.out.println(i);
+	}
+	}
+public void run(){
+//obj.mine();
+for (int i=1;i<=10;i++)
+{
+System.out.println(i);
+System.out.println(i+Thread.currentThread().getName());
+
+}
+
+}}
