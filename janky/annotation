@@ -1,0 +1,15 @@
+
+ @interface first_anno{
+ 
+	String author_name() default("janky");
+	String  value() default("28");    
+	
+}
+public class first_annotation{
+	
+		@first_anno
+		void xyz()
+	{
+		System.out.println("hello");
+	}
+}
