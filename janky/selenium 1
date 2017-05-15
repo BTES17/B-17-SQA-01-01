@@ -1,0 +1,19 @@
+package ankita;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class selen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//String b=System.getProperty("user.dir");
+		//System.out.println(b);
+	
+		String url= System.getProperty("user.dir")+"\\src\\chromedriver.exe";
+		String setProperty = System.setProperty("webdriver.chrome.driver",url);
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+		String title=driver.getTitle();
+	}
+
+}
