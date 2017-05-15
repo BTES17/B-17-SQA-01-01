@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class charecter
+{
+  public static void main(String args[])
+  {
+    Scanner scan=new Scanner(System.in);
+    System.out.println("Enter the data for string");
+    String a=scan.Next();
+    boolean b=a.contains("f");
+    if (b)
+    {
+      System.out.println("f element exist in the string");
+    }
+    else
+    {
+      System.out.println("element does'nt exist ");
+    }
+    
+  }
+}
