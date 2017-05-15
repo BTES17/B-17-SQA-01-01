@@ -1,0 +1,13 @@
+class frequency{
+public static void main(String args[])
+{
+char c;
+Scanner scan=new Scanner(System.in);
+System.out.println("Enter a string");
+scan.nextLine();
+for(c='a' && c='z',c++)
+{
+System.out.println(c);
+}
+
+
