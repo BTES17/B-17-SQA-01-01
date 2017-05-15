@@ -1,0 +1,35 @@
+armstrong  series
+
+class arms
+
+{
+
+ public static void main (String args[]);
+    
+{
+int a,b,c,n,num
+scanner S=new scanner(system.in)
+{
+
+ system.out.println("enter number");
+}
+ d=num;
+
+while(n>0)
+{
+
+ no=s.next int();
+ a=n%10;
+ n=n+a*a*a;
+ if(no==b)
+{
+ system.out.println("no is arms")
+
+  else
+{
+ system.out.println("no is not arms")
+}
+
+
+ }} } }
+  
