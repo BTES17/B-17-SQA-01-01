@@ -1,5 +1,5 @@
 Jashan  1. Print factorial of a number.
-
+   
 public class factorial{
 public staic void main(String[] args){
 int i,;
