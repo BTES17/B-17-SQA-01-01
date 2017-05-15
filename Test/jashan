@@ -1,0 +1,21 @@
+Jashan  1. Print factorial of a number.
+
+public class factorial{
+public staic void main(String[] args){
+int i,;
+int fact=1;
+int number=5;
+for(i=1;i<=5;i++){
+fact=fact*1;
+}
+System.out.println(fact);
+}}
+
+
+
+
+
+
+
+
+
