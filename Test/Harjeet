@@ -1,0 +1,23 @@
+sum of digits of a number until the addition is not obtain a s single digit.
+
+public class digit
+{
+public static void main(String[] args)
+{
+System.out.println("Enter the digit upto 9");
+Scanner scan=new Scanner(System.in);                
+int num=scan.nextInt();
+}
+while(num!=0)
+{
+int sum=0;
+n=num;
+q=n/10;
+r=n%10;
+sum= sum+r;
+num=q;
+}
+System.out.println(sum);
+}
+
+
