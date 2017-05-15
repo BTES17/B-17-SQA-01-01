@@ -1,0 +1,25 @@
+fibbonacci  series
+
+class fibonacci
+
+{
+
+ public static void main (String args[]);
+
+    int n,n1,n2
+   n=0;
+   n=1;
+   n=3;
+  int count=10;
+  system.out.println("n1+n2");
+   
+ for(i=2;i<count;++1)
+{
+  n3=n1+n2;
+  n1=n2;
+  n==n3;
+{
+ system.out.println("n3");
+
+ }}  
+  
