@@ -1,5 +1,6 @@
 sum of digits of a number until the addition is not obtain a s single digit.
 
+
 public class digit
 {
 public static void main(String[] args)
