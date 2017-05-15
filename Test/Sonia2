@@ -1,0 +1,23 @@
+2. Print series of first 10 prime numbers.
+Ans.
+class primenums{
+public static void main(String[]args)
+{
+int num=10;
+int m=0,i;
+for(i=2;i<=num;i++)
+{
+for(int j=2;j<i;j++)
+{
+if(i%j==0)
+{
+m=1;
+break;
+}
+else
+{
+m=0;
+}
+}
+}
+}}
