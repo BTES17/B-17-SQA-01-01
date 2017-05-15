@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class RevArray
+{
+  public static void main(String args[]
+  {
+    System.out.println("Enter the no of elements in array");
+    Scanner scan = new Scanner(System.in);
+    int n = scan.nextInt();
+    int a[] = new int[n];
+    System.out.println("Enter the elements");
+    for(int i = 0; i <n;i++)
+    {
+      a[i]= scan.nextInt();
+    }
+    System.out.println("Elements in array are");
+    for(int i = 0; i<n;i++)
+    {
+      System.out.println(a[i]);
+    }
+    System.out.println("Reverse Array");
+    for(int j=n-1;j>=0;j--)
+    {
+      System.out.println(a[i]);
+    }
+  }
+}
