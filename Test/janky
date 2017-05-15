@@ -1,0 +1,19 @@
+public class janky {
+
+      public static void main(String[] args) { 
+
+ 
+
+            int num=35; 
+
+            int i; 
+            int m=0;
+            System.out.println("first 10 prime no's");
+
+            for( i=2;i<=num;i++) 
+
+            { if (i%
+
+}
+}
+}
