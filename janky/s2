@@ -1,0 +1,32 @@
+import javax.lang.model.util.Elements;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class selm {
+
+	public static void main(String[] args) {
+		
+					
+				String url= "D:\\chromedriver.exe";
+				String setProperty = System.setProperty("webdriver.chrome.driver",url); 
+				ChromeDriver driver=new ChromeDriver();
+				driver.get("https://www.facebook.com/");
+				String title=driver.getCurrentUrl();
+				String title1=driver.getPageSource();
+				//String title1=driver.
+
+
+				System.out.println(title);
+				System.out.println(title1);
+				
+			WebDriver un_element= (WebDriver) driver.findElement(By.id("email"));
+			WebDriver un_element1= (WebDriver) driver.findElement(By.id("pass"));
+				((WebElement) un_element).sendKeys("janky");
+				((WebElement) un_element1).sendKeys("janky");
+				log_button.click();
+			}
+
+		}
