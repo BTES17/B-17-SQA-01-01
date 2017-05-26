@@ -1,0 +1,84 @@
+package Selenium1;
+import POI.Hls_Reader;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.GeckoDriverService;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import POI.Hls_Reader;
+import ishaan1.string;
+
+public class demo 
+{
+	static Hls_Reader obj1= new Hls_Reader("C:\\Documents and Settings\\install\\Desktop\\firstsheet.xls");
+
+	public static void main(String args[])
+	{
+		
+		String url="C:\\Documents and Settings\\install\\Desktop\\chromedriver.exe";
+	String url1="C:\\Documents and Settings\\install\\Desktop\\geckodriver.exe";
+	//System.setProperty("webdriver.gecko.driver",url1);
+	//WebDriver driver1=new GeckoDriver();
+		System.setProperty("webdriver.chrome.driver",url);
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.facebook.com");
+		String title=driver.getTitle();
+		System.out.println(title);
+	//	String pagesource=driver.getPageSource();
+		//System.out.println(pagesource);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		WebElement UN_element=driver.findElement(By.id("email"));
+		String UN= obj1.getCellData("Sheet1","UN",2);
+		UN_element.sendKeys(UN);
+		WebElement Pw_element=driver.findElement(By.id("pass"));
+		String PW= obj1.getCellData("Sheet1","PW",2);
+		Pw_element.sendKeys(PW);  
+		
+		WebElement Login=driver.findElement(By.id("u_0_q"));
+	
+
+		Login.click();
+		String expected_result= obj1.getCellData("Sheet1","Expected Result",2);
+		WebElement e= (new WebDriverWait(driver, 30)).until(ExpectedConditions.presenceOfElementLocated(By.id("email")));
+		String Actual_Result= driver.getCurrentUrl();
+		
+if(expected_result.equals(Actual_Result))
+{
+	 obj1.setCellData("Sheet1","Actual Result",2,"Pass");
+}
+else
+{
+	obj1.setCellData("Sheet1","Actual Result",2,"Fail");
+}
+	//	System.out.println("clicked login");
+		//System.out.println("startsleep");
+		/*try
+		{ 
+			Thread.sleep(5000);
+		}
+		catch (Exception e)
+		{
+			System.out.println(e);
+		}
+		System.out.println("endsleep");
+		
+		//WebElement abc= By.id("Email");
+		//By.name("Page");
+		//By.linkText("More options");
+	driver.navigate().refresh();
+	driver.navigate().back();
+	//driver.navigate().forward();
+	
+		//driver.close();
+	*/
+	
+
+		
+	}
+}
