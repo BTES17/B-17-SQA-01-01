@@ -7,8 +7,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Navigation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import POI.Hls_Reader;
 
 public class MyFirstSelenium {
+	static Hls_Reader obj1=new Hls_Reader("C:\\Documents and Settings\\install\\Desktop");
+	
 	public static void main (String args[]){
 	String url=System.getProperty("user.dir")+"\\src\\chromedriver.exe";
 	 
@@ -24,37 +30,42 @@ public class MyFirstSelenium {
 	//driver.close();
 	//driver.quit();
 	WebElement Un_element=driver.findElement(By.id("email"));
-			Un_element.sendKeys("admin");  
-			WebElement Pw_element=driver.findElement(By.name("pass"));
-     Pw_element.sendKeys("admin");
+	String UN=obj1.getCellData("Sheet1","User_Name",2);
+			Un_element.sendKeys(UN);  
+			
+			WebElement Pw_element=driver.findElement(By.id("pass"));
+			String PW=obj1.getCellData("Sheet1", "Password",2);
+					Un_element.sendKeys(PW);
+			
+			Pw_element.sendKeys(PW);
+     
      WebElement Login=driver.findElement(By.id("u_0_q"));
      Login.click();
-     driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+     String ER=obj1.getCellData("Sheet1","Expected Result",2);
+     WebElement e=(new WebDriverWait(driver,30)).until(ExpectedConditions.presenceOfElementLocated(By.id("Email")));
      
-   /* try 
+     
+     String AR=driver.getCurrentUrl();
+     if(ER.equals(AR))
      {
-    Thread.sleep(4000);			
+    	 obj1.setCellData("Sheet1", "Actual Result",2,"Pass");
      }
-    		catch(Exception n)
-    		{
-    		System.out.println(n);
-    	}*/
+     else
+     {
+      obj1.setCellData("Sheet1","Actual Result",2,"Fail");
+	}
+	driver.close();
+     
+     //driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+     
+   
      System.out.println("endleep");
      WebElement o=driver.findElement(By.linkText("Games"));
      o.click();
      
      
             
-    /* try 
-     {
-    	Thread.sleep(4000);
-     }
-    		catch(Exception n)
-    		{
-    		System.out.println(n);
-    	}*/
-    // System.out.println("endleep");
-    	
+    
      
      
     // Navigation obj=driver.navigate();
