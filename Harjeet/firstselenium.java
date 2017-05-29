@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Navigation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class firstselenium {
 	
@@ -16,10 +18,10 @@ public class firstselenium {
 		
 
 			
-			String url=System.getProperty("user.dir")+"\\src\\chromedriver.exe";
+			String url="C:\\Documents and Settings\\install\\Desktop\\chromedriver.exe";
 			 
 			System.setProperty("webdriver.chrome.driver",url);
-			System.out.println(System.getProperty("webdriver.chrome.driver"));
+			//System.out.println(System.getProperty("webdriver.chrome.driver"));
 			WebDriver driver=new ChromeDriver();
 			driver.get("https://www.facebook.com/");
 			//driver.get("https://172.16.0.42/placementcell/admin/");
@@ -42,6 +44,19 @@ public class firstselenium {
 		     Login.click();
 		     
 		 	String ER=obj1.getCellData("Sheet1","Expected_result",2);
+		 	WebElement e=(new WebDriverWait(driver,30)).until(ExpectedConditions.presenceOfElementLocated(By.id("Email")));
+		 	String AR=driver.getCurrentUrl();
+		 	if(ER.equals(AR))
+		 	{
+		 		obj1.setCellData("Sheet1", "Actual Result",2,"Pass");
+		 	}
+		 	else
+		 	{
+		 		obj1.setCellData("Sheet1", "Actual Result",2,"Fail");
+		 	}
+		 	driver.close();
+		 	
+		 	
 		  
 		    //   driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		   /* try 
@@ -78,5 +93,4 @@ public class firstselenium {
 			
 			}
 	}
-
 
