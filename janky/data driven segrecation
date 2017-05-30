@@ -54,7 +54,7 @@ static	void testcase(int testcase)
 	}
 	static void result(int testcase)
 	{
-		String expected_result= obj1.getCellData("Sheet1","Expected Result",2);
+		String expected_result= obj1.getCellData("Sheet1","Expected Result",testcase);
 		WebElement e= (new WebDriverWait(driver, 30)).until(ExpectedConditions.presenceOfElementLocated(By.id("email")));
 		String Actual_Result= driver.getCurrentUrl();
 		
