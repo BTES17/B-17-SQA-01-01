@@ -1,0 +1,104 @@
+package Selenium1;
+import POI.Hls_Reader;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.GeckoDriverService;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import POI.Hls_Reader;
+import ishaan1.string;
+
+public class demo 
+{
+static Hls_Reader obj1= new Hls_Reader("C:\\Documents and Settings\\install\\Desktop\\firstsheet.xls");
+static WebDriver driver;
+	
+	static void setup(int testcase)
+  {
+	  if (obj1.getCellData("Sheet1", "Browser", testcase).equals("Mozilla"))
+	  {
+		  String url="C:\\Documents and Settings\\install\\Desktop\\geckodriver.exe"; 
+			System.setProperty("webdriver.gecko.driver",url);
+			driver=new FirefoxDriver();
+	  }
+	  else if (obj1.getCellData("Sheet1", "Browser", testcase).equals("Google Chrome")){
+	  String url="C:\\Documents and Settings\\install\\Desktop\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver",url);
+		driver=new ChromeDriver();
+		}
+		
+			driver.get("https://www.facebook.com");
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  
+  }
+static	void testcase(int testcase)
+	{
+		WebElement UN_element=login.UN_element(driver);
+		String UN= obj1.getCellData("Sheet1","UN",testcase);
+		UN_element.sendKeys(UN);
+		WebElement PW_element=login.UN_element(driver);
+		String PW= obj1.getCellData("Sheet1","PW",testcase);
+		PW_element.sendKeys(PW);  
+		
+		WebElement Login_click=login.UN_element(driver);
+	
+
+		Login_click.click();
+	}
+	static void result(int testcase)
+	{
+		String expected_result= obj1.getCellData("Sheet1","Expected Result",2);
+		WebElement e= (new WebDriverWait(driver, 30)).until(ExpectedConditions.presenceOfElementLocated(By.id("email")));
+		String Actual_Result= driver.getCurrentUrl();
+		
+if(expected_result.equals(Actual_Result))
+{
+	 obj1.setCellData("Sheet1","Actual Result",testcase,"Pass");
+}
+else
+{
+	obj1.setCellData("Sheet1","Actual Result",testcase,"Fail");
+}
+driver.close();
+	}
+	public static void main(String args[])
+	{
+		int numberoftestcases=obj1.getRowCount("Sheet1");
+		System.out.println(numberoftestcases);
+		for (int i=2;i<=numberoftestcases;i++)
+		{
+			if (obj1.getCellData("Sheet1", "Status", i).equals("ON")){
+				setup(i);
+				testcase(i);
+				result(i);
+			}
+		}
+			
+	}
+	
+	
+	
+}
+class login
+{
+	
+static WebElement UN_element(WebDriver driver){
+		 return driver.findElement((By.id("email")));
+		
+	 }
+public static WebElement PW_element(WebDriver driver){
+	return driver.findElement(By.id("pass"));
+	
+}
+public WebElement login_click(WebDriver driver){
+	return driver.findElement(By.id("u_0_q"));
+
+}
+}
