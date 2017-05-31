@@ -36,17 +36,20 @@ public class selenium1 {
 	  }
 	static	void testcase(int testcase)
 		{
-			WebElement UN_element=driver.findElement(By.id("email"));
+			//WebElement UN_element=driver.findElement(By.id("email"));
+		WebElement Un_Element=login.username(driver);
 			String UN= obj1.getCellData("Sheet1","User_name",testcase);
-			UN_element.sendKeys(UN);
-			WebElement Pw_element=driver.findElement(By.id("pass"));
+			Un_Element.sendKeys(UN);
+		//	WebElement Pw_element=driver.findElement(By.id("pass"));
+			WebElement Pw_Element=login.password(driver);
 			String PW= obj1.getCellData("Sheet1","Password",testcase);
-			Pw_element.sendKeys(PW);  
+			Pw_Element.sendKeys(PW);  
 			
-			WebElement Login=driver.findElement(By.id("u_0_q"));
+		//	WebElement Login=driver.findElement(By.id("u_0_q"));
+			WebElement login_click=login.login(driver);
 		
 
-			Login.click();
+			login_click.click();
 		}
 		static void result(int testcase)
 		{
