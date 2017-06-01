@@ -16,12 +16,16 @@ import POI.Hls_Reader;
 import ishaan1.string;
 
 public class demo 
-{
-static Hls_Reader obj1= new Hls_Reader("C:\\Documents and Settings\\install\\Desktop\\firstsheet.xls");
+{static Hls_Reader obj1= new Hls_Reader("C:\\Documents and Settings\\install\\Desktop\\firstsheet.xls");
 static WebDriver driver;
+
+
+
+
 	
 	static void setup(int testcase)
-  {
+  { 
+		System.out.println(obj1.getCellData("Sheet1", "Browser", testcase));
 	  if (obj1.getCellData("Sheet1", "Browser", testcase).equals("Mozilla"))
 	  {
 		  String url="C:\\Documents and Settings\\install\\Desktop\\geckodriver.exe"; 
@@ -43,13 +47,12 @@ static	void testcase(int testcase)
 		WebElement UN_element=login.UN_element(driver);
 		String UN= obj1.getCellData("Sheet1","UN",testcase);
 		UN_element.sendKeys(UN);
-		WebElement PW_element=login.UN_element(driver);
+		WebElement PW_element=login.PW_element(driver);
 		String PW= obj1.getCellData("Sheet1","PW",testcase);
 		PW_element.sendKeys(PW);  
 		
-		WebElement Login_click=login.UN_element(driver);
+		WebElement Login_click=login.login_click(driver);
 	
-
 		Login_click.click();
 	}
 	static void result(int testcase)
@@ -57,7 +60,7 @@ static	void testcase(int testcase)
 		String expected_result= obj1.getCellData("Sheet1","Expected Result",2);
 		WebElement e= (new WebDriverWait(driver, 30)).until(ExpectedConditions.presenceOfElementLocated(By.id("email")));
 		String Actual_Result= driver.getCurrentUrl();
-		
+		System.out.println(Actual_Result);
 if(expected_result.equals(Actual_Result))
 {
 	 obj1.setCellData("Sheet1","Actual Result",testcase,"Pass");
@@ -97,7 +100,7 @@ public static WebElement PW_element(WebDriver driver){
 	return driver.findElement(By.id("pass"));
 	
 }
-public WebElement login_click(WebDriver driver){
+public static WebElement login_click(WebDriver driver){
 	return driver.findElement(By.id("u_0_q"));
 
 }
